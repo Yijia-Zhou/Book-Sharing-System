@@ -4,7 +4,7 @@ $def with(books)
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>Promoter 图书共享平台</title><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}html { font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); }
+<title>金字塔学社图书共享平台</title><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}html { font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
@@ -210,7 +210,7 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 
 </style>
 </head>
-<body class='typora-export' ><div  id='write'  class = 'is-node'><h1><a name='header-n51' class='md-header-anchor '></a>Promoter 图书共享平台</h1><p>​欢迎来到 Promoter 图书共享平台 😺 <br />共享书籍已列在下方，您可以选择自己想读的书点击相应按钮发送请求，也可以 <a href='http://weizhinaihe.pythonanywhere.com/sharebook'>共享自己的书</a> 或 <a href='http://weizhinaihe.pythonanywhere.com/managebook'>管理自己共享的书</a>。</p><table><thead><tr><th style='text-align:center;' >书名</th><th style='text-align:center;' >简介 / 推荐</th><th style='text-align:center;' >想读吗？</th></tr></thead><tbody>
+<body class='typora-export' ><div  id='write'  class = 'is-node'><h1><a name='header-n51' class='md-header-anchor '></a>金字塔学社图书共享平台</h1><p>​欢迎来到金字塔学社图书共享平台 😺 <br />共享书籍已列在下方，您可以选择自己想读的书点击相应按钮发送请求，也可以 <a href='http://weizhinaihe.pythonanywhere.com/sharebook'>共享自己的书</a> 或 <a href='http://weizhinaihe.pythonanywhere.com/managebook'>管理自己共享的书</a>。</p><table><thead><tr><th style='text-align:center;' >书名</th><th style='text-align:center;' >简介 / 推荐</th><th style='text-align:center;' >想读吗？</th></tr></thead><tbody>
           $for item in books:
           <tr><td style='text-align:center;' >$item['title']</td><td style='text-align:center;' >$item['command']</td><td style='text-align:center;' ><form action="http://weizhinaihe.pythonanywhere.com/requestbook" method="post"> <input type="hidden" name="key" value="$item['key']" /> <input type="submit" value=">_<&#13;&#10;想"/></form></td></tr>
         </tbody></table><p></p></div>
