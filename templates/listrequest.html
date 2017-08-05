@@ -212,9 +212,7 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
             <th style='text-align:center;' >借书人姓名</th>
             <th style='text-align:center;' >借书人联系方式</th>
             <th style='text-align:center;' >借书人请求理由</th>
-            <th style='text-align:center;' >借给谁？</th>
-        </tr></thead>
-        <tbody>
+            <th style='text-align:center;' >借给谁？</th></tr></thead><tbody>
           $for key in book['req_cases'].keys():
           <tr>
             <td style='text-align:center;' >$book['req_cases'][key]['requester']</td>
