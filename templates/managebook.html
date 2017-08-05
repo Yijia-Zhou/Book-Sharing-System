@@ -209,7 +209,7 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-node'><h1><a name='header-n51' class='md-header-anchor '></a>Promoter 图书共享平台</h1><p>​以下是在 Promoter 图书共享平台中共享书籍的相关信息，您可以点击自己的书对应的按钮，验证问答后可以管理自己共享的书。</p><table><thead><tr><th style='text-align:center;' >书名</th><th style='text-align:center;' >拥有者</th><th style='text-align:center;' >拥有者联系方式</th><th style='text-align:center;' >现在谁处</th><th style='text-align:center;' >持有者联系方式</th><th style='text-align:center;' >请求数</th><th style='text-align:center;' >管理</th></tr></thead><tbody>
+<div  id='write'  class = 'is-node'><h1><a name='header-n51' class='md-header-anchor '></a>金字塔学社图书共享平台</h1><p>​以下是在金字塔学社图书共享平台中共享书籍的相关信息，您可以点击自己的书对应的按钮，验证问答后可以管理自己共享的书。</p><table><thead><tr><th style='text-align:center;' >书名</th><th style='text-align:center;' >拥有者</th><th style='text-align:center;' >拥有者联系方式</th><th style='text-align:center;' >现在谁处</th><th style='text-align:center;' >持有者联系方式</th><th style='text-align:center;' >请求数</th><th style='text-align:center;' >管理</th></tr></thead><tbody>
           $for item in books:
           <tr><td style='text-align:center;' >$item['title']</td><td style='text-align:center;' >$item['owner']</td><td style='text-align:center;' >$item['tel']</td><td style='text-align:center;' >$item['taker']</td><td style='text-align:center;' >$item['taker_tel']</td><td style='text-align:center;' >$len(item['req_cases'])</td><td style='text-align:center;' ><form action="http://weizhinaihe.pythonanywhere.com/checkpermission" method="post"> <input type="hidden" name="key" value="$item['key']" /> <input type="submit" value="进入管理页面"/></form></td></tr>
         </tbody></table><p></p></div>
